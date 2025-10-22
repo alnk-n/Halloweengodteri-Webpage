@@ -48,7 +48,7 @@ h1{
     height: 0;
     border-left: 20px solid transparent; 
     border-right: 20px solid transparent; 
-    border-top: 20px solid #12010f;
+    border-top: 35px solid #12010f;
 }
 
 #mainWrap{
@@ -180,7 +180,7 @@ h1{
     height: 0;
     border-left: 20px solid transparent; 
     border-right: 20px solid transparent; 
-    border-bottom: 20px solid #12010f;
+    border-bottom: 25px solid #12010f;
 }
 
 .fangsWrapRev{

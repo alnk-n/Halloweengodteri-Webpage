@@ -24,8 +24,8 @@ function updateCount(){
     clearInterval(timer);
     return;
   }
-    countdownTime.innerHTML = total.days + " Days | "
-    + total.hours + " Hours | " + total.minutes + " Minutes";
+    countdownTime.innerHTML = total.days + " Dager | "
+    + total.hours + " Timer | " + total.minutes + " Minutter";
 }
 
 const timer = setInterval(updateCount, 10000000);
