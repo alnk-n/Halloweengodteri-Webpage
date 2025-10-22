@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="stylesheet.css">
     <title>Halloween 2IT</title>
-    <nav id = "halloweenTitle">
-        <!-- <h1>Halloween 2IT</h1>
-        <h2>...and IM, i guess..</h2> -->
+    <nav id = "nav">
         <h1 class = "eyes"> &#9679;</h1>
         <h1 class = "eyes"> &#9679;</h1>
     </nav>
@@ -22,7 +20,7 @@
         <div id = "counterWrap">
             <p id ="samleInfo"> This far we have collected: </p>
             <div id = "counter">
-                <p>283 kr</p>
+                <p>387.99 kr</p>
             </div>
         </div>
 
@@ -31,7 +29,34 @@
         </aside>
 
         <section id = "topDonations">
-            <!--QR code-->
+            
+            <div class = "donateWrap">
+                <div class = "donator">
+                    <img class = "pfp" src="bentErikpfp.jpg" alt="BentErik ProfilePicture">
+                </div>
+
+                <p class = "donatorName">Bent Erik Hammernes:</p>
+                <p class = "donated">110kr</p>
+            </div>
+            
+            <div class = "donateWrap">
+                <div class = "donator">
+                    <img class = "pfp" src="bentErikpfp.jpg" alt="BentErik ProfilePicture">
+                </div>
+
+                <p class = "donatorName">Alan Nagorny:</p>
+                <p class = "donated">100kr</p>
+            </div>
+            
+            <div class = "donateWrap">
+                <div id = "donatorElias">
+                    <img id = "pfpElias" src="elias.png" alt="Elias ProfilePicture">
+                </div>
+
+                <p class = "donatorName">Elias Fossland:</p>
+                <p class = "donated">67kr</p>
+            </div>
+            
         </section>
     </main>
 
@@ -41,7 +66,12 @@
             <div class = "fangsRev"></div>
         </div>
 
-        <footer id = "bottom"></footer>
+        <footer id = "bottom">
+            <p id = "countdownP">Time left to donate:</p>
+            <p id = "changeJS">1</p>
+        </footer>
     </footer>
+
+    <script src = "script.js"></script>
 </body>
 </html>

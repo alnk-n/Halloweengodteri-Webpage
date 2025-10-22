@@ -1,39 +1,28 @@
 *{
     padding: 0;
     margin: 0;
-}
-
-@font-face {
-    font-family: "Bones";
-    src: url(Death\ Bones.ttf);
-}
-
-@font-face {
-    font-family: "Caslo";
-    src: url(Caslo-an.ttf);
+    font-family:Helvetica, sans-serif;
 }
 
 body{
     height: 100%;
     flex-direction: column;
-    background-image: linear-gradient(-90deg, #f0740e, #cd4d08);
+    background-image: linear-gradient(90deg, #f0740e, #cd4d08);
 }
 
-#halloweenTitle{
+#nav{
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    text-align: center;
     justify-content: center;
     background-color: #12010f;
+
+    gap: 3rem;
     padding: 2rem 1.5rem;
-    text-align: center;
     box-shadow: 2px 10px 20px #f3700d;
 }
 
-
 h1{
-    font-family: "Bones";
-    letter-spacing: 0.15rem;
     font-size: 3.5rem;
     color: #fff;
     text-shadow:
@@ -47,18 +36,11 @@ h1{
     0 0 53px #6723b4f5;
 }
 
-h2{
-    font-family: "Bones";
-    letter-spacing: 0.1rem;
-    font-size: 3.5rem;
-    color: #00b527;
-}
-
 .fangsWrap{
     display: flex;
     flex-direction: row;
-    gap: 6rem;
     justify-content: center;
+    gap: 6rem;
 }
 
 .fangs {
@@ -66,17 +48,17 @@ h2{
     height: 0;
     border-left: 20px solid transparent; 
     border-right: 20px solid transparent; 
-    border-top: 20px solid #000;
+    border-top: 20px solid #12010f;
 }
 
-
 #mainWrap{
-    flex: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    gap: 1.5rem;
 }
 
 #counterWrap{
@@ -104,14 +86,12 @@ h2{
 
 #samleInfo{
     font-size: 2.5rem;
-    font-family:Helvetica, sans-serif;
     font-weight: bolder;
     color: bisque;
 }
 
 #counter p{
     font-size: 3rem;
-    font-family:Helvetica, sans-serif;
     color: #fff;
     text-shadow:
     0 0 7px #ffffff6b,        
@@ -122,6 +102,71 @@ h2{
     0 0 52px #e04f0df5,
     0 0 52px #e04f0df5,
     0 0 53px #e04f0df5;
+}
+
+#topDonations{
+    display: flex;
+    flex-direction: row;
+    background-color: #12010f4a;
+    height: fit-content;
+    border-radius: 3rem;
+    width: 60%;
+
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+
+.donateWrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+
+    background-color: #12010f;
+    height: fit-content;
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.donator{
+    height: 60%;
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.pfp{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 5rem;
+}
+
+#donatorElias{
+    height: 10%;
+    width: 15%;
+    padding: 0.5rem;
+}
+
+#pfpElias{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 5rem;
+}
+
+.donatorName{
+    color: #37b823;
+    font-size: 1.3rem;
+}
+
+.donated{
+    color: #9323b8;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
 }
 
 #footerWrap{
@@ -135,7 +180,7 @@ h2{
     height: 0;
     border-left: 20px solid transparent; 
     border-right: 20px solid transparent; 
-    border-bottom: 20px solid #000;
+    border-bottom: 20px solid #12010f;
 }
 
 .fangsWrapRev{
@@ -146,7 +191,26 @@ h2{
 }
 
 #bottom{
+    display: flex;
+    flex-direction: row;
     background-color: #12010f;
-    height: 4rem;
+    height: 4.5rem;
     width: 100%;
+    justify-content: center;
+}
+
+#countdownP{
+    font-size: 1.5rem;
+    font-family:Helvetica, sans-serif;
+    color: bisque;
+
+    padding: 1.5rem;
+}
+
+#changeJS{
+    font-size: 1.5rem;
+    font-family:Helvetica, sans-serif;
+    color: #9323b8;
+
+    padding: 1.5rem;
 }
