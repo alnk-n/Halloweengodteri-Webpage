@@ -15,15 +15,17 @@ function getTimeRemaining(endtime){
 }
 
 function updateCount(){
-    const countdownTime = document.getElementById("changeJS");
-    const total = getTimeRemaining(deadline);
+    while (true){
+        const countdownTime = document.getElementById("changeJS");
+        const total = getTimeRemaining(deadline);
 
-    if (total.total <= 0) {
-    clearInterval(timer);
-    return;
-  }
-    countdownTime.innerHTML = total.days + " Dager | "
-    + total.hours + " Timer | " + total.minutes + " Minutter";
+        if (total.total <= 0) {
+        clearInterval(timer);
+        return;
+    }
+        countdownTime.innerHTML = total.days + " Dager | "
+        + total.hours + " Timer | " + total.minutes + " Minutter";
+    }
 }
 
 const timer = setInterval(updateCount, 60000);
