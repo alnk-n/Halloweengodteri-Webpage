@@ -62,18 +62,29 @@ h1{
     width: 100%;
     padding: 0.5rem;
 
+    overflow: hidden;
 }
 
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-80%, 0); }
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .thanksStripe p{
     color: #360247;
     font-size: 1.6rem;
     font-weight: bolder;
-    animation: marquee 45s linear infinite;
+    animation: scrollLeft 85s linear infinite;
+    will-change: transform;
+}
+
+.names {
+  font-weight: 900;
+  color: #0e4007; 
 }
 
 #mainWrap{
@@ -172,7 +183,7 @@ h1{
 
 .donatorLong{
     height: 10%;
-    width: 15%;
+    width: 16%;
     padding: 0.5rem;
 }
 
