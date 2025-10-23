@@ -41,6 +41,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     gap: 6rem;
+    position: relative;
 }
 
 .fangs {
@@ -49,6 +50,30 @@ h1{
     border-left: 20px solid transparent; 
     border-right: 20px solid transparent; 
     border-top: 35px solid #12010f;
+    z-index: 2;
+}
+
+.thanksStripe {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(255, 228, 196, 0.501);
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-80%, 0); }
+}
+
+.thanksStripe p{
+    color: #360247;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    animation: marquee 45s linear infinite;
 }
 
 #mainWrap{
