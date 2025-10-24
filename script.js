@@ -1,4 +1,4 @@
-const deadline = new Date("2025-10-30T00:00:00Z");
+const deadline = new Date("2025-10-28T00:00:00Z");
 
 function getTimeRemaining(endtime) {
   const total = endtime - Date.now();
